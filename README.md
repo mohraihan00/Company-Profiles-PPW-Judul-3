@@ -44,8 +44,8 @@ Website ini adalah landing page responsif bertema **mobil listrik futuristik**, 
 ---
 
 ## 💡 Screenshot Hasil
-<img width="1552" height="967" alt="image" src="https://github.com/user-attachments/assets/c043101f-86c3-4bd1-9ad5-8a9d0a712585" />
-<img width="1513" height="875" alt="image" src="https://github.com/user-attachments/assets/97fb6a25-9bf6-49f2-bf59-fee59464910b" />
+<img width="1529" height="815" alt="image" src="https://github.com/user-attachments/assets/5bf62269-e2be-4619-9de1-2263199d1177" />
+<img width="1514" height="832" alt="image" src="https://github.com/user-attachments/assets/14e03cbe-2bc3-4596-a0f6-f31fda51b67c" />
 <img width="1579" height="882" alt="image" src="https://github.com/user-attachments/assets/87ecddce-a87d-4d30-9ea3-bfeb4bf85c99" />
 
 ---
