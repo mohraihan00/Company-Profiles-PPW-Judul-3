@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GoGoiGoy Motors — Electric Performance, Zero Compromise</title>
+  <meta name="description" content="GoGoiGoy Motors — mobil listrik futuristik, eco-friendly, performa tinggi dengan efisiensi energi dan teknologi pengisian cepat.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mint: {
+              50: "#eafff4",
+              100: "#c2ffdf",
+              300: "#4dffb3",
+              400: "#19ffa0",
+              500: "#00f18f",
+              600: "#00c876",
+              700: "#00a565",
+            }
+          },
+          boxShadow: {
+            neon: "0 0 25px rgba(0, 241, 143, .35)",
+            neonMd: "0 0 50px rgba(0, 241, 143, .25)",
+          },
+          backgroundImage: {
+            grid: "linear-gradient(to right, rgba(0,241,143,.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,241,143,.08) 1px, transparent 1px)",
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glow-pulse { box-shadow: 0 0 0 rgba(0,241,143,.4); animation: glow 2.4s ease-in-out infinite; }
+    @keyframes glow { 0%,100%{ box-shadow:0 0 0 rgba(0,241,143,.25) } 50%{ box-shadow:0 0 36px rgba(0,241,143,.45) } }
+  </style>
+</head>
+
+<body class="bg-black text-zinc-200 selection:bg-mint-500/30 selection:text-white">
+  <!-- Background -->
+  <div aria-hidden="true" class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-grid bg-[size:38px_38px]"></div>
+    <div class="absolute -top-32 -left-20 h-[40rem] w-[40rem] rounded-full blur-3xl opacity-20 bg-mint-600/30"></div>
+    <div class="absolute -bottom-40 -right-20 h-[44rem] w-[44rem] rounded-full blur-3xl opacity-20 bg-emerald-600/30"></div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/40 border-b border-zinc-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <span class="h-9 w-9 rounded-lg bg-gradient-to-br from-mint-500 to-emerald-600 flex items-center justify-center shadow-neon" aria-hidden="true">
+            <svg class="h-5 w-5 text-black" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 12h6l-3 6 9-12h-6l3-6z"/>
+            </svg>
+          </span>
+          <span class="font-semibold tracking-wide">GoGoiGoy <span class="text-mint-500">Motors</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#home" class="hover:text-white">Beranda</a>
+          <a href="#features" class="hover:text-white">Fitur</a>
+          <a href="#about" class="hover:text-white">Tentang</a>
+          <a href="#contact" class="hover:text-white">Kontak</a>
+          <a href="#contact" class="inline-flex items-center rounded-md bg-mint-600 px-4 py-2 font-medium text-black shadow-neon hover:bg-mint-500 transition">Test Drive</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-md border border-zinc-800 p-2 text-zinc-300 hover:bg-zinc-900" aria-label="Toggle Menu" aria-expanded="false">
+          <svg id="iconOpen" class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg id="iconClose" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden pb-6">
+        <nav class="mt-2 space-y-2 text-sm">
+          <a href="#home" class="block rounded-md px-3 py-2 hover:bg-zinc-900">Beranda</a>
+          <a href="#features" class="block rounded-md px-3 py-2 hover:bg-zinc-900">Fitur</a>
+          <a href="#about" class="block rounded-md px-3 py-2 hover:bg-zinc-900">Tentang</a>
+          <a href="#contact" class="block rounded-md px-3 py-2 hover:bg-zinc-900">Kontak</a>
+          <a href="#contact" class="block rounded-md bg-mint-600 px-3 py-2 font-medium text-black shadow-neon hover:bg-mint-500">Test Drive</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="relative">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border border-mint-600/30 bg-mint-600/10 px-3 py-1 text-xs text-mint-400 shadow-neon">
+              <span class="h-2 w-2 rounded-full bg-mint-500 glow-pulse"></span>
+              Electric • Zero Emission • Ultra Range
+            </p>
+            <h1 class="mt-5 text-4xl sm:text-5xl/tight font-bold leading-tight">
+              <span class="block">Di jalan <span class="text-mint-500">senyap</span>,</span>
+              <span class="block">di listrik <span class="text-mint-500">irit</span>,</span>
+              <span class="block">di kantong nggak bikin <span class="text-mint-500">trauma</span>.</span>
+            </h1>
+
+            <p class="mt-4 text-zinc-400 max-w-xl">
+              GoGoiGoy menghadirkan mobil listrik futuristik ramah lingkungan dengan jarak tempuh panjang, pengisian super cepat, dan sistem keselamatan cerdas.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a href="#contact" class="inline-flex items-center rounded-lg bg-mint-600 px-6 py-3 font-semibold text-black shadow-neon hover:bg-mint-500 transition">
+                Jadwalkan Test Drive
+              </a>
+              <a href="#about" class="inline-flex items-center rounded-lg border border-zinc-800 px-6 py-3 font-semibold text-zinc-200 hover:bg-zinc-900 transition">
+                Lihat Spesifikasi
+              </a>
+            </div>
+            <div class="mt-10 flex flex-wrap items-center gap-6 text-xs text-zinc-500">
+              <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-mint-500"></span> 700+ km WLTP</div>
+              <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-mint-500"></span> 10–80% < 20 menit</div>
+              <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-mint-500"></span> ADAS Level 2+</div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <!-- Visual mock mobil: kotak neon + “silhouette” -->
+            <div class="aspect-[4/3] rounded-2xl border border-mint-500/40 bg-gradient-to-br from-zinc-900 to-black shadow-neonMd p-6">
+              <div class="h-full w-full rounded-xl border border-zinc-800 bg-black/60 grid place-items-center">
+                <svg viewBox="0 0 600 280" class="w-[88%]">
+                  <!-- Siluet mobil sederhana -->
+                  <path d="M60 190 Q120 110 230 110 H360 Q430 110 520 160 Q540 170 550 190 H60 Z" fill="rgba(0,241,143,.08)" stroke="rgba(0,241,143,.35)" stroke-width="3"/>
+                  <!-- Roda -->
+                  <circle cx="160" cy="195" r="28" fill="none" stroke="rgba(0,241,143,.6)" stroke-width="3"/>
+                  <circle cx="430" cy="195" r="28" fill="none" stroke="rgba(0,241,143,.6)" stroke-width="3"/>
+                  <!-- Lampu & garis aksen -->
+                  <rect x="505" y="165" width="30" height="6" rx="3" fill="rgba(0,241,143,.5)"/>
+                  <rect x="85" y="165" width="30" height="6" rx="3" fill="rgba(0,241,143,.35)"/>
+                </svg>
+              </div>
+            </div>
+            <p class="mt-3 text-xs text-zinc-500">Siluet konsep GoGoiGoy — fokus pada aerodinamika dan efisiensi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="border-t border-zinc-800/60 bg-zinc-950/40">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-2xl sm:text-3xl font-bold">Fitur Utama</h2>
+        <p class="mt-2 text-zinc-400 max-w-2xl">Tiga pilar yang membuat pengalaman berkendara listrik jadi praktis dan menyenangkan setiap hari.</p>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 1: Ultra Range -->
+          <article class="rounded-xl border border-zinc-800 bg-black/60 p-6 hover:border-mint-500/50 transition">
+            <div class="flex items-center gap-3">
+              <span class="inline-grid place-items-center h-10 w-10 rounded-lg bg-mint-600/15 border border-mint-600/40 text-mint-400 shadow-neon">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M3 12h18M12 3v18"></path>
+                </svg>
+              </span>
+              <h3 class="font-semibold">Ultra Range 700+ km</h3>
+            </div>
+            <p class="mt-3 text-sm text-zinc-400">Paket baterai efisien dengan manajemen termal cerdas untuk perjalanan antarkota tanpa cemas.</p>
+          </article>
+
+          <!-- 2: Fast Charging -->
+          <article class="rounded-xl border border-zinc-800 bg-black/60 p-6 hover:border-mint-500/50 transition">
+            <div class="flex items-center gap-3">
+              <span class="inline-grid place-items-center h-10 w-10 rounded-lg bg-mint-600/15 border border-mint-600/40 text-mint-400 shadow-neon">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"></path>
+                </svg>
+              </span>
+              <h3 class="font-semibold">Fast Charging < 20 menit</h3>
+            </div>
+            <p class="mt-3 text-sm text-zinc-400">Ngopi sebentar, balik sudah 80%. Lebih cepat dari nunggu 19 juta lapanga-</p>
+          </article>
+
+          <!-- 3: Smart Safety -->
+          <article class="rounded-xl border border-zinc-800 bg-black/60 p-6 hover:border-mint-500/50 transition">
+            <div class="flex items-center gap-3">
+              <span class="inline-grid place-items-center h-10 w-10 rounded-lg bg-mint-600/15 border border-mint-600/40 text-mint-400 shadow-neon">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"></path>
+                  <path d="M9.5 12.5l2 2 3-3"></path>
+                </svg>
+              </span>
+              <h3 class="font-semibold">Smart Safety ADAS 2+</h3>
+            </div>
+            <p class="mt-3 text-sm text-zinc-400">Asistensi pengemudi cerdas: lane-centering, adaptive cruise, auto-park, dan pemantauan blind-spot.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-zinc-800/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold">Tentang GoGoiGoy</h2>
+            <p class="mt-4 text-zinc-400">
+              Kami memadukan desain aerodinamis, efisiensi energi, dan teknologi canggih untuk mobil listrik yang relevan bagi pengguna harian. Misi kami sederhana: membuat kendaraan nol emisi yang cepat, aman, dan terjangkau dalam jangka panjang.
+            </p>
+            <ul class="mt-6 space-y-2 text-sm text-zinc-300">
+              <li class="flex items-center gap-3">
+                <span class="h-1.5 w-1.5 rounded-full bg-mint-500"></span> Garansi baterai hingga 8 tahun
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-1.5 w-1.5 rounded-full bg-mint-500"></span> Jaringan charging partner nasional
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-1.5 w-1.5 rounded-full bg-mint-500"></span> Ekosistem aplikasi untuk monitoring kendaraan
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800 bg-black/60 p-6">
+            <h3 class="font-semibold">Nilai & Fokus</h3>
+            <div class="mt-4 grid sm:grid-cols-3 gap-3">
+              <div class="rounded-lg border border-zinc-800 bg-zinc-950/50 p-3 text-center">
+                <div class="text-mint-400 font-semibold">Efisiensi</div>
+                <div class="text-xs text-zinc-400">Jarak tempuh & biaya</div>
+              </div>
+              <div class="rounded-lg border border-zinc-800 bg-zinc-950/50 p-3 text-center">
+                <div class="text-mint-400 font-semibold">Performa</div>
+                <div class="text-xs text-zinc-400">Torsi instan</div>
+              </div>
+              <div class="rounded-lg border border-zinc-800 bg-zinc-950/50 p-3 text-center">
+                <div class="text-mint-400 font-semibold">Keamanan</div>
+                <div class="text-xs text-zinc-400">ADAS & struktur</div>
+              </div>
+            </div>
+            <h3 class="mt-6 font-semibold">Program</h3>
+            <p class="mt-2 text-zinc-400">Trade-in, subsidi charger rumah, dan paket servis berkala tersedia di dealer resmi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-t border-zinc-800/60 bg-zinc-950/40">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold">Jadwalkan Test Drive</h2>
+            <p class="mt-2 text-zinc-400">Tinggalkan data singkatmu. Tim kami akan menghubungi untuk menjadwalkan sesi test drive di kota terdekat.</p>
+            <div class="mt-6 flex items-center gap-4 text-sm text-zinc-400">
+              <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-mint-500"></span> Respons &lt; 24 jam</span>
+              <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-mint-500"></span> Dealer bersertifikat</span>
+            </div>
+          </div>
+
+          <form action="#" method="post" class="rounded-2xl border border-zinc-800 bg-black/60 p-6 shadow-neonMd">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="text-sm text-zinc-400">Nama</label>
+                <input id="name" name="name" type="text" required
+                       class="mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm text-zinc-200 outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500">
+              </div>
+              <div>
+                <label for="email" class="text-sm text-zinc-400">Email</label>
+                <input id="email" name="email" type="email" required
+                       class="mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm text-zinc-200 outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500">
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label for="city" class="text-sm text-zinc-400">Kota</label>
+              <input id="city" name="city" type="text" required
+                     class="mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm text-zinc-200 outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500">
+            </div>
+
+            <div class="mt-4">
+              <label for="model" class="text-sm text-zinc-400">Model Pilihan</label>
+              <select id="model" name="model" required
+                      class="mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm text-zinc-200 outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500">
+                <option value="">Pilih model...</option>
+                <option>VV-One (Urban Range)</option>
+                <option>VV-Pro (Grand Tourer)</option>
+                <option>VV-XR (Performance AWD)</option>
+              </select>
+            </div>
+
+            <div class="mt-4">
+              <label for="message" class="text-sm text-zinc-400">Catatan</label>
+              <textarea id="message" name="message" rows="5"
+                        class="mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm text-zinc-200 outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500"></textarea>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between">
+              <label class="inline-flex items-center gap-2 text-xs text-zinc-400">
+                <input type="checkbox" required class="rounded border-zinc-700 bg-zinc-950 text-mint-500 focus:ring-mint-500">
+                Saya setuju data ini diproses untuk keperluan perusahaan.
+              </label>
+              <button type="submit" class="rounded-lg bg-mint-600 px-6 py-2.5 font-semibold text-black shadow-neon hover:bg-mint-500 transition">
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-500">© <span id="year"></span> GoGoiGoy Motors. All rights reserved.</p>
+      <div class="flex items-center gap-4 text-zinc-400">
+        <a href="#" class="hover:text-white" aria-label="Instagram">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+        </a>
+        <a href="#" class="hover:text-white" aria-label="YouTube">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.7 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="#" class="hover:text-white" aria-label="X">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.54 7.46L22 22h-6.78l-4.9-6.41L4.7 22H2l7.06-8.04L2 2h6.86l4.54 6.02L18.244 2zM8.24 3.5H4.75l10.83 14.6h3.5L8.24 3.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const iconOpen = document.getElementById('iconOpen');
+    const iconClose = document.getElementById('iconClose');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
